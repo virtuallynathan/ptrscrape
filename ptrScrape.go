@@ -11,7 +11,6 @@ import (
 var addrs chan string
 
 func main() {
-	runtime.GOMAXPROCS(4)
 	network := flag.String("network", "8.8.8.8/32", "the network to do PTR lookups for")
 	flag.Parse()
 
